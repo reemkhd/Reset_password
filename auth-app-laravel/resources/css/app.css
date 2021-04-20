@@ -1,0 +1,7 @@
+.button-bottom{
+    position: static;
+    border: 3px solid red;
+    bottom: 60%;
+    width: 30%;
+    height: 100px;
+}
