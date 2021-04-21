@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="user != undefined">
+      Welcome {{ user["first_name"]  }} {{ user["last_name"]  }}
+  </div>
+  <div class="button-bottom">
+      <ion-button expand="full" [routerLink]="['/reset']">reset password</ion-button>
+      <ion-button expand="full" [routerLink]="['/logout']">Logout</ion-button>
+  </div>
+</ion-content>
